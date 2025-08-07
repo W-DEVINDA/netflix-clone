@@ -42,6 +42,7 @@ Save the file.
 In the terminal, run the following commands:
 
 npm install
+
 npm run dev
 
 
