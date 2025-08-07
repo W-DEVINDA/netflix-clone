@@ -1,12 +1,47 @@
-# React + Vite
+**Firebase Setup Guide for Netflix Clone**
+Follow the steps below to set up Firebase for this project.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Step 1: Create a Firebase Project**
+Go to https://firebase.google.com and sign in with your Google account.
+Click "Add Project".
+Enter a project name:
+netflix-clone
+Click Continue.
+Turn off Google Analytics (optional).
+Click Create Project.
 
-Currently, two official plugins are available:
+Once the project is created, click Continue to open the dashboard.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Step 2: Enable Authentication**
+In the Firebase Console, navigate to Build > Authentication.
+Click Get Started.
+Under Sign-in Method, enable the Email/Password option.
+Click Save.
 
-## Expanding the ESLint configuration
+**Step 3: Set Up Firestore Database**
+Go to Build > Firestore Database.
+Click Create Database.
+Choose your nearest location.
+Click Next, select Start in test mode, then click Enable.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Step 4: Register a Web App**
+Go to the Project Overview in Firebase.
+Click the Web icon (</>).
+Enter an app nickname:
+netflix-clone
+Click Register App.
+Copy the generated Firebase configuration.
+
+**Step 5: Add Firebase Configuration to the Project**
+Open the project in VS Code or your preferred code editor.
+Navigate to the firebase.js file.
+Replace the existing config object with the configuration you copied from Firebase.
+Save the file.
+
+**Step 6: Run the Project**
+In the terminal, run the following commands:
+
+npm install
+npm run dev
+
+
